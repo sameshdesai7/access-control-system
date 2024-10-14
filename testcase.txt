@@ -1,0 +1,28 @@
+useradd root password
+login root password
+useradd sam password
+groupadd first
+groupadd second
+groupadd third
+groupadd fourth
+usergrp sam second
+mkfile newfile.txt
+mkfile newfile2.txt
+mkfile newfile3.txt
+mkfile newfile3.txt
+mkfile newcontent.txt
+mkfile newcontent.txt
+chmod newcontent.txt rwx rwx rwx
+chmod newfile3.txt --- rwx ---
+chown newfile3.txt connor
+logout 
+login sam password
+chgrp newfile3.txt second
+read newfile.txt
+write newcontent.txt test1
+write newcontent.txt test2
+read newcontent.txt
+execute newcontent.txt
+ls newfile3.txt
+logout 
+end
